@@ -1,0 +1,46 @@
+@import "../../styles/Color.module.scss";
+@import "../../styles/Text.module.scss";
+
+.profile-container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.navigation-panel-container {
+  display: flex;
+  flex-direction: column;
+}
+.navigation-panel-item {
+  width: 100%;
+  border: 1px solid $primary-x-dark;
+  background-color: $primary-extra-light;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  @extend .heading-4;
+}
+.navigation-panel-item:hover {
+  background-color: $primary-light;
+}
+.navigation-panel-item.active {
+  background-color: $primary-x-dark;
+  color: $white;
+}
+.profile-panel-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+  height: fit-content;
+  border: 1px solid $primary-x-dark;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: $primary-extra-light;
+}
+.profile-panel-title {
+  @extend .subheading;
+}
+.profile-panel-content {
+  padding: 20px;
+}

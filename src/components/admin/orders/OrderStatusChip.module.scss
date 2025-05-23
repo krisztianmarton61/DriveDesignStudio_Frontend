@@ -1,0 +1,32 @@
+@import "../../../styles/Color.module.scss";
+
+.chip {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 110px;
+  text-align: center;
+}
+.yellow {
+  background-color: $dark-yellow;
+  color: #ffffff;
+}
+.dark-red {
+  background-color: $light-red;
+  color: #ffffff;
+}
+.green {
+  background-color: $dark-green;
+  color: #ffffff;
+}
+.blue {
+  background-color: $blue;
+  color: #ffffff;
+}
+.dark-green {
+  background-color: $dark-blue;
+  color: #ffffff;
+}

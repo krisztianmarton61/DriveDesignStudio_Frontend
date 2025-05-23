@@ -1,0 +1,50 @@
+@import "../../../styles/Text.module.scss";
+@import "../../../styles/Table.module.scss";
+
+.order-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.table-container {
+  @extend .table-container;
+  width: 100%;
+}
+.order-information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.order-information-basic {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-extra-light;
+  border-radius: 4px;
+  padding: 14px;
+  border: 1px solid $primary-x-dark;
+}
+.order-information-billing-shipping-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 250px;
+}
+.order-information-billing-shipping {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.order-information-billing-shipping-item {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-extra-light;
+  border-radius: 4px;
+  padding: 14px;
+  border: 1px solid $primary-x-dark;
+  gap: 10px;
+}

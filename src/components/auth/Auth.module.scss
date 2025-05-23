@@ -1,0 +1,17 @@
+@import "../../styles/Form.module.scss";
+@import "../../styles/Button.module.scss";
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding-top: 5%;
+}
+
+.form {
+  @extend .form;
+  background-color: $light-grey;
+  border: 1px solid $light-blue;
+  padding: 20px;
+  border-radius: 4px;
+}

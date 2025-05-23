@@ -1,0 +1,129 @@
+@import "../../styles/Page.module.scss";
+@import "../../styles/Button.module.scss";
+@import "../../styles/Color.module.scss";
+@import "../../styles/Text.module.scss";
+
+.home-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  height: fit-content;
+  background-color: $primary-dark;
+  display: flex;
+  flex-direction: row;
+}
+.branding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.home {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //background-image: url("/car-inside.svg");
+}
+.home-text {
+  @extend .heading;
+  color: $white;
+}
+.home-image {
+  width: 50%;
+}
+.text-logo {
+  width: 70%;
+}
+.car-logo {
+  width: 15%;
+}
+
+.home-button {
+  @extend .primary;
+  margin-top: 3%;
+  border-radius: 35px;
+  padding: 30px 40px;
+  width: fit-content;
+  font-size: 32px;
+  line-height: 56px;
+  &:hover {
+    border-color: $white;
+  }
+}
+.customize-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $primary-xxx-dark;
+  gap: 50px;
+}
+.customize-tutorial {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 80%;
+  min-height: 30%;
+}
+.customize-tutorial-item {
+  background-color: $primary-light;
+  border-radius: 10px;
+  padding: 50px 20px;
+  width: 50%;
+}
+.customize-tutorial-item-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.customize-tutorial-item-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.subtitle {
+  @extend .subheading;
+  color: $white;
+  font-size: 18px;
+}
+.title {
+  @extend .heading;
+  color: $white;
+  font-size: 54px;
+  padding-bottom: 50px;
+}
+.strengths-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 50px;
+  h2 {
+    @extend .subheading;
+    color: $white;
+  }
+  h3 {
+    @extend .heading-3;
+  }
+  p {
+    @extend .paragraph;
+    margin-left: 32px;
+  }
+}
+.strengths-item {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 150px;
+  background-color: $primary-extra-light;
+  padding: 20px;
+  border-radius: 10px;
+}

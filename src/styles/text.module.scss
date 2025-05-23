@@ -1,0 +1,91 @@
+@import "./Color.module.scss";
+
+.heading {
+  font-family: "Garamond", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  color: $dark-grey;
+}
+.subheading {
+  font-family: "Garamond", sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 600;
+  color: $dark-grey;
+}
+.heading-3 {
+  font-family: "Garamond", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $dark-grey;
+}
+.heading-4 {
+  font-family: "Garamond", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $dark-grey;
+}
+.paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  color: $grey;
+}
+.error {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $dark-grey;
+}
+.link {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: $blue;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.price-large {
+  font-family: "Garamond", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 900;
+  color: $dark-red;
+}
+.old-price-large {
+  font-family: "Garamond", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+  color: $grey;
+  text-decoration: line-through;
+}
+.price-medium {
+  @extend .price-large;
+  font-size: 24px;
+  line-height: 32px;
+}
+.old-price-medium {
+  @extend .old-price-large;
+  font-size: 16px;
+  line-height: 24px;
+}
+.price-small {
+  @extend .price-large;
+  font-size: 18px;
+  line-height: 24px;
+}
+.old-price-small {
+  @extend .old-price-large;
+  font-size: 12px;
+  line-height: 18px;
+}

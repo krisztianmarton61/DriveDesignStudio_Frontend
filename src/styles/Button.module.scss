@@ -1,0 +1,68 @@
+@import "./Color.module.scss";
+.button-text {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.button {
+  height: 44px;
+  width: 100%;
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  border: 1px solid $dark-red;
+  cursor: pointer;
+  @extend .button-text;
+}
+.primary {
+  @extend .button;
+  background: $dark-red;
+  color: $white;
+  svg {
+    width: 24px;
+    height: 24px;
+    color: $white;
+  }
+  &:hover,
+  &:active {
+    background: $white;
+    color: $dark-red;
+  }
+  &:disabled {
+    color: $light-grey-active;
+    background: $light-grey;
+    cursor: not-allowed;
+  }
+}
+
+.secondary {
+  @extend .button;
+  border: 1px solid $dark-red;
+  background: $white;
+  color: $blue;
+  svg {
+    width: 24px;
+    height: 24px;
+    color: $white;
+  }
+  &:hover,
+  &:active {
+    background: $dark-red;
+    border: 1px solid $dark-red;
+    color: $white;
+    .dot {
+      background-color: $white;
+    }
+  }
+  &:disabled {
+    color: $light-grey-active;
+    background: $light-grey;
+    cursor: not-allowed;
+  }
+}

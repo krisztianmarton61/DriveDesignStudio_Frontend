@@ -1,0 +1,75 @@
+@import "./Color.module.scss";
+@import "./Text.module.scss";
+@import "./Button.module.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  input {
+    @extend .input;
+  }
+  select {
+    @extend .select-input;
+  }
+  label {
+    @extend .label;
+  }
+  button[type="submit"] {
+    @extend .primary;
+  }
+}
+
+.input {
+  width: 90%;
+  height: 44px;
+  border: 1px solid $light-grey-active;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: $dark-grey;
+  padding-left: 12px;
+  &:focus,
+  &:active,
+  &:hover {
+    border: 1px solid $blue;
+  }
+  &::placeholder {
+    color: $grey;
+  }
+}
+
+.label {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: $dark-grey;
+}
+
+.select-input {
+  width: 90%;
+  height: 48px;
+  border: 1px solid $light-grey-active;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: $dark-grey;
+  padding-left: 12px;
+  &:focus,
+  &:active,
+  &:hover {
+    border: 1px solid $blue;
+  }
+  &::placeholder {
+    color: $grey;
+  }
+}

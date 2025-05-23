@@ -1,0 +1,36 @@
+{
+  "auth": {
+    "signUp": {
+      "alert": {
+        "success": "You have successfully signed up. Please check your email to verify your account."
+      }
+    },
+    "signUpConfirm": {
+      "alert": {
+        "success": "You have successfully confirmed your account. You can now sign in."
+      }
+    },
+    "signUpResend": {
+      "alert": {
+        "success": "You have successfully resent the confirmation email. Please check your email."
+      }
+    },
+    "signIn": {
+      "alert": {
+        "success": "You have successfully signed in."
+      }
+    },
+    "forgotPassword": {
+      "alert": {
+        "success": "You have successfully requested a password reset. Please check your email."
+      }
+    }
+  },
+  "user": {
+    "getCurrentUser": {
+      "alert": {
+        "error": "There was an error getting the current user."
+      }
+    }
+  }
+}

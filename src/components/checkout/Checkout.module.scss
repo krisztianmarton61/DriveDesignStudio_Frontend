@@ -1,0 +1,100 @@
+@import "../../styles/Form.module.scss";
+@import "../../styles/Color.module.scss";
+@import "../../styles/Common.module.scss";
+@import "../../styles/Button.module.scss";
+
+.checkout-container {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 20px;
+}
+.information-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+}
+.shipping-information-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form {
+  @extend .form;
+  background-color: $white;
+  border-radius: 8px;
+  border: 1px solid $light-grey-active;
+  padding: 20px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6%;
+  width: 100%;
+}
+.select-container {
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+
+  select {
+    width: 100%;
+  }
+}
+.summary-container {
+  display: flex;
+  flex-direction: column;
+}
+.cart-items-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 8px;
+  background-color: $white;
+  border: 1px solid $light-grey-active;
+}
+.cart-item {
+  display: flex;
+  flex-direction: row;
+}
+.cart-item-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}
+.cart-item-details-container {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.cart-item-actions-container {
+  display: flex;
+  width: 100px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.price-summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+.create-account-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.checkbox {
+  all: unset;
+}

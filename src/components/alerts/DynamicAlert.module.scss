@@ -1,0 +1,41 @@
+@import "../../styles/Color.module.scss";
+@import "../../styles/Text.module.scss";
+
+.alert-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: fit-content;
+  height: fit-content;
+  z-index: 100;
+  transition: top 0.5s ease;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+.alert {
+  @extend .error;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.alert-success {
+  border: 1px solid $dark-green;
+  background-color: rgba($color: $light-green, $alpha: 0.5);
+  svg {
+    color: $dark-green;
+  }
+}
+.alert-error {
+  border: 1px solid $dark-red;
+  background-color: rgba($color: $light-red, $alpha: 0.5);
+  svg {
+    color: $dark-red;
+  }
+}

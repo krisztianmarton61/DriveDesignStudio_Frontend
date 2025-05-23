@@ -1,0 +1,88 @@
+@import "../../styles/Color.module.scss";
+@import "../../styles/Button.module.scss";
+@import "../../styles/Text.module.scss";
+@import "../../styles/Common.module.scss";
+
+.cart-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+}
+.cart-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  background-color: $white;
+  border: 1px solid $light-grey-active;
+}
+.cart-item-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.cart-item-details-container {
+  display: flex;
+  width: 375px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.cart-item-quantity-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding: 0px 20px;
+}
+.quantity-button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.quantity-button {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $light-grey-active;
+  color: $dark-blue;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    border-color: $dark-blue;
+  }
+  &:active {
+    background-color: $light-grey-active;
+  }
+}
+.cart-item-actions-container {
+  display: flex;
+  width: 160px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.cart-summary {
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  height: fit-content;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: $white;
+  border: 1px solid $light-grey-active;
+}
