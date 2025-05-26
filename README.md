@@ -1,71 +1,46 @@
-# React + TypeScript + Vite
+# Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React.js-based frontend application built with TypeScript to ensure type safety and easier debugging. The application is structured into modular, reusable components for better maintainability and scalability.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Authentication**  
+  Authentication is handled via **Amazon Cognito**, supporting secure login, logout, and password management. Authentication is optional but unlocks additional features. Custom React components manage user input and communicate with Cognito services.
 
-## Expanding the ESLint configuration
+- **Homepage & Navigation**  
+  The main page features product highlights, general information, and personalized recommendations. Users can navigate to detailed product pages where they can:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  - View product visualizations
+  - Add items to the cart
+  - Access the product editor
 
-- Configure the top-level `parserOptions` property like this:
+- **Product Editor**  
+  One of the app’s core components, allowing users to:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+  - Generate images using AI
+  - Upload their own images
+  - Browse and select from community-generated images
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+  Once an image is selected, users can personalize it by:
 
-## Deploy
+  - Adding text
+  - Formatting visuals
+  - Removing backgrounds
+  - Drawing over the image
 
-# Create a UserPool in aws cognito
+- **Order Flow**  
+  After customization, users can view their cart and proceed to order. If the user is not registered, a profile is created automatically.
 
-- login only with email
+- **State Management**  
+  The application uses `preact-signals` for efficient and consistent state handling across components.
 
-# flow
+- **Real-Time Feedback**  
+  A notification system displays real-time messages for events like login success or error alerts. Multiple messages can appear simultaneously and automatically disappear after a short period.
 
-Ket lehetosege van a vevonek:
+## Tech Stack
 
-1. General egy kepet
-
-- a kep elmentesre kerul es mindenki szamara lathato lesz, bekerul egy s3 bucketbe
-- amennyiben egy kep nem kerul megvasarlasra 30 napig, akkor torlesre kerul
-  Vasarlas eseten:
-- a kep szemelyreszabasa utan bekerul egy masik s3 bucket-be amely a vasarlohoz kapcsolodik
-
-Informaciok egy keprol:
-
-- kep id
-- utoljara mikor volt megvasarolva
-- generalo script
-- hanyszor volt megvasarolva
-- kedvencekhez hanyan adtak
-- generalas datuma
-- kategoria
-
-Informaciok a vasarlohoz kapcsolt keprol
-
-- order tablaban elmentve
-
-2. Feltolt egy kepet
-
-- mely szemelyreszabas utan fog bekerulni az s3-bucket-ba amely a vasarlohoz kapcsolodik
-  Informaciok a vasarlohoz kapcsolt keprol
-- order tablaban elmentve
-
-## Cognito User pool létrehozása
-
-- No verification needed
+- React.js
+- TypeScript
+- Preact Signals
+- Amazon Cognito
+- CSS/SCSS
